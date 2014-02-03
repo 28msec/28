@@ -18,7 +18,8 @@
     "underscore": "~1.5.2",
     "read": "~1.0.5",
     "request": "~2.33.0",
-    "touch": "0.0.3"
+    "touch": "0.0.3",
+    "final-fs": "~1.4.4"
   },
   "optionalDependencies": {},
   "engines": {
