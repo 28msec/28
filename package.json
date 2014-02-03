@@ -1,0 +1,19 @@
+{
+  "author": "28msec",
+  "name": "28",
+  "description": "Command line utility to download and upload 28.io queries.",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "./lib/main",
+  "bin": {
+    "28": "./bin/28"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
