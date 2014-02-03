@@ -6,12 +6,20 @@
   "repository": {
     "url": ""
   },
-  "main": "./lib/main",
+  "main": "./lib/main.js",
   "bin": {
     "28": "./bin/28"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "commander": "~2.1.0",
+    "q": "~1.0.0",
+    "cat-settings": "~1.0.0",
+    "underscore": "~1.5.2",
+    "read": "~1.0.5",
+    "request": "~2.33.0",
+    "touch": "0.0.3"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
