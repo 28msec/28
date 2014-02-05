@@ -2,9 +2,9 @@
   "author": "28msec",
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "repository": {
-    "url": ""
+    "url": "https://github.com/28msec/28"
   },
   "main": "./lib/main.js",
   "bin": {
