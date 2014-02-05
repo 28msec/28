@@ -35,7 +35,7 @@ $ 28 projects
 ### Download Project
 
 ```
-$28 download <project name> [-d, --delete-orphanted] [-o, --overwrite <yes, no, ask, if-newer>] [-s, --simulate]
+$28 download <project name> [-d, --delete-orphaned] [-o, --overwrite <yes, no, ask, if-newer>] [-s, --simulate]
 ```
 Options:
 
@@ -48,7 +48,7 @@ Options:
 ### Upload Project
 
 ```
-$28 upload <project name> [-d, --delete-orphanted] [-o, --overwrite <yes, no, ask, if-newer>] [-s, --simulate]
+$28 upload <project name> [-d, --delete-orphaned] [-o, --overwrite <yes, no, ask, if-newer>] [-s, --simulate]
 ```
 
 Options:
