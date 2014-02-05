@@ -2,7 +2,7 @@
   "author": "28msec",
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "url": ""
   },
@@ -10,8 +10,7 @@
   "bin": {
     "28": "./bin/28"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "commander": "~2.1.0",
     "q": "~1.0.0",
     "cat-settings": "~1.0.0",
@@ -20,6 +19,8 @@
     "request": "~2.33.0",
     "touch": "0.0.3",
     "final-fs": "~1.4.4"
+  },
+  "devDependencies": {
   },
   "optionalDependencies": {},
   "engines": {
