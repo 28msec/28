@@ -53,10 +53,10 @@ $28 upload <project name> [-d, --delete-orphanted] [-o, --overwrite <yes, no, as
 
 Options:
 
-  -h, --help               output usage information
-  -o, --overwrite <value>  Overwrite remote files. Value can be yes, no, if-newer, or ask.
-  -s, --simulate           Simulate for extra safety.
-  -d, --delete-orphaned    Delete orphaned files.
+* -h, --help               output usage information
+* -o, --overwrite <value>  Overwrite remote files. Value can be yes, no, if-newer, or ask.
+* -s, --simulate           Simulate for extra safety.
+* -d, --delete-orphaned    Delete orphaned files.
 
 
 ## Synchronizing 
