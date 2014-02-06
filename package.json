@@ -2,7 +2,7 @@
   "author": "28msec",
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "keywords": [
     "jsoniq",
     "xquery",
