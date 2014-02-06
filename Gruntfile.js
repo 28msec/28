@@ -11,10 +11,24 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'lib/**/*.js'
+                'lib/**/*.js',
+                'test/**/*.js'
             ]
+        },
+        vows: {
+            all: {
+                options: {
+                    verbose: true,
+                    colors: true,
+                    coverage: 'json'
+                },
+                // String or array of strings
+                // determining which files to include.
+                // This option is grunt's "full" file format.
+                src: ['test/*.js', 'spec/*']
+            }
         }
     });
     
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['jshint', 'vows']);
 };

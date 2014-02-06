@@ -1,5 +1,9 @@
 {
-  "author": "28msec",
+  "author": {
+    "name": "28msec",
+    "email": "hello@28.io",
+    "url": "http://28.io"
+  },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
   "version": "0.1.8",
@@ -31,7 +35,9 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.6.3",
-    "matchdep": "~0.3.0"
+    "matchdep": "~0.3.0",
+    "vows": "~0.7.0",
+    "grunt-vows": "~0.4.0"
   },
   "optionalDependencies": {},
   "engines": {
@@ -43,5 +49,12 @@
       "name": "William Candillon",
       "email": "w@28.io"
     }
-  ]
+  ],
+  "scripts": {
+    "test": "node ./node_modules/vows/bin/vows --spec"
+  },
+  "directories": {
+    "test": "./test",
+    "bin": "./bin"
+  }
 }
