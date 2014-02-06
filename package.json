@@ -3,6 +3,11 @@
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
   "version": "0.1.3",
+  "keywords": [
+      "jsoniq", "xquery", "dev", "cloud"
+  ],
+  "homepage": "https://28.io",
+  "bugs": "https://github.com/28msec/28/issues",
   "repository": {
     "url": "https://github.com/28msec/28"
   },
@@ -24,6 +29,13 @@
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
-  }
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  },
+  "contributors": [
+      {
+          "name": "William Candillon",
+          "email": "w@28.io"
+      }
+  ]
 }
