@@ -4,7 +4,10 @@
   "description": "Command line utility to download and upload 28.io queries.",
   "version": "0.1.5",
   "keywords": [
-      "jsoniq", "xquery", "dev", "cloud"
+    "jsoniq",
+    "xquery",
+    "dev",
+    "cloud"
   ],
   "homepage": "https://28.io",
   "bugs": "https://github.com/28msec/28/issues",
@@ -26,6 +29,9 @@
     "final-fs": "~1.4.4"
   },
   "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3",
+    "matchdep": "~0.3.0"
   },
   "optionalDependencies": {},
   "engines": {
@@ -33,9 +39,9 @@
     "npm": ">=1.1.0"
   },
   "contributors": [
-      {
-          "name": "William Candillon",
-          "email": "w@28.io"
-      }
+    {
+      "name": "William Candillon",
+      "email": "w@28.io"
+    }
   ]
 }
