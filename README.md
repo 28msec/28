@@ -102,4 +102,8 @@ This is how the default settings looks like:
 * *protocol* property can be *http* or *https*.
 * *project_name* property is the name of the prefix of the 28.io API endpoint.
 * *project_domain* property is the suffix of the 28.io API endpoint.
-* *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded
+* *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded.
+
+## ChangeLog
+Version 0.1.9
+* Bug fixes: [#1](https://github.com/28msec/28/issues/1), [#2](https://github.com/28msec/28/issues/2), [#3](https://github.com/28msec/28/issues/3).
