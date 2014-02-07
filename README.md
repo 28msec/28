@@ -86,20 +86,20 @@ This is how the default settings looks like:
 
 ```json
 {
-    'access_token': '',
-    'refresh_token': '',
-    'project_tokens': {},
-    'email': '',
-    'protocol': 'https',
-    'project_name': 'portal',
-    'project_domain': '28.io',
-    'ignore': [
-        'lib/io/28/api/.*'
+    "access_token": "",
+    "refresh_token': "",
+    "project_tokens': {},
+    "email": "",
+    "protocol": "https",
+    "project_name": "portal",
+    "project_domain": "28.io",
+    "ignore": [
+        "lib/io/28/api/.*"
     ]
 }
 ```
-The *access_token*, *refresh_token*, *project_tokens*, and *email* properties can be filled using the ``28 login`` command.
-The *protocol* property can be *http* or *https*.
-The *project_name* property is the name of the prefix of the 28.io API endpoint.
-The *project_domain* property is the suffix of the 28.io API endpoint.
-The *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded
+* *access_token*, *refresh_token*, *project_tokens*, and *email* properties can be filled using the ``28 login`` command.
+* *protocol* property can be *http* or *https*.
+* *project_name* property is the name of the prefix of the 28.io API endpoint.
+* *project_domain* property is the suffix of the 28.io API endpoint.
+* *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded
