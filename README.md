@@ -82,3 +82,24 @@ $28 download test --overwrite if-newer --delete-orphaned
 
 By default, a setting file named *.28.json* is created in your home directory.
 You can override these default settings by creating your own *.28.json* file in the current working directory.
+This is how the default settings looks like:
+
+```json
+{
+    'access_token': '',
+    'refresh_token': '',
+    'project_tokens': {},
+    'email': '',
+    'protocol': 'https',
+    'project_name': 'portal',
+    'project_domain': '28.io',
+    'ignore': [
+        'lib/io/28/api/.*'
+    ]
+}
+```
+The *access_token*, *refresh_token*, *project_tokens*, and *email* properties can be filled using the ``28 login`` command.
+The *protocol* property can be *http* or *https*.
+The *project_name* property is the name of the prefix of the 28.io API endpoint.
+The *project_domain* property is the suffix of the 28.io API endpoint.
+The *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded
