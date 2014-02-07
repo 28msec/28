@@ -77,3 +77,8 @@ You can use the *download* command to periodically get updates from your 28.io p
 ```
 $28 download test --overwrite if-newer --delete-orphaned
 ```
+
+## Settings
+
+By default, a setting file named *.28.json* is created in your home directory.
+You can override these default settings by creating your own *.28.json* file in the current working directory.
