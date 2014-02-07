@@ -77,3 +77,33 @@ You can use the *download* command to periodically get updates from your 28.io p
 ```
 $28 download test --overwrite if-newer --delete-orphaned
 ```
+
+## Settings
+
+By default, a setting file named *.28.json* is created in your home directory.
+You can override these default settings by creating your own *.28.json* file in the current working directory.
+This is how the default settings looks like:
+
+```json
+{
+    "access_token": "",
+    "refresh_token": "",
+    "project_tokens": {},
+    "email": "",
+    "protocol": "https",
+    "project_name": "portal",
+    "project_domain": "28.io",
+    "ignore": [
+        "lib/io/28/api/.*"
+    ]
+}
+```
+* *access_token*, *refresh_token*, *project_tokens*, and *email* properties can be filled using the ``28 login`` command.
+* *protocol* property can be *http* or *https*.
+* *project_name* property is the name of the prefix of the 28.io API endpoint.
+* *project_domain* property is the suffix of the 28.io API endpoint.
+* *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded.
+
+## ChangeLog
+Version 0.1.9
+* Bug fixes: [#1](https://github.com/28msec/28/issues/1), [#2](https://github.com/28msec/28/issues/2), [#3](https://github.com/28msec/28/issues/3).
