@@ -87,8 +87,8 @@ This is how the default settings looks like:
 ```json
 {
     "access_token": "",
-    "refresh_token': "",
-    "project_tokens': {},
+    "refresh_token": "",
+    "project_tokens": {},
     "email": "",
     "protocol": "https",
     "project_name": "portal",
