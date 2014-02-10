@@ -59,6 +59,17 @@ Options:
 * `-s, --simulate`           Simulate for extra safety.
 * `-d, --delete-orphaned`    Delete orphaned files.
 
+### Truncate Project
+
+```
+$28 truncate <project name> [-s, --simulate]
+```
+
+Options:
+
+* `-h, --help`               output usage information.
+* `-s, --simulate`           Simulate for extra safety.
+
 
 ## Synchronizing 
 
@@ -105,6 +116,10 @@ This is how the default settings looks like:
 * *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded.
 
 ## ChangeLog
+
+Version 0.2.1
+
+* New truncate command.
 
 Version 0.2.0
 
