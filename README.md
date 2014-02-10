@@ -1,4 +1,4 @@
-28.io CLI Tool: Getting Started
+28.io CLI [![Build Status](https://travis-ci.org/28msec/28.png?branch=master)](https://travis-ci.org/28msec/28)
 ============
 
 Below you'll find tutorials that will teach you how to use 28.io, and reference documentation.
