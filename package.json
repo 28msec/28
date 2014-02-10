@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-cli": "~0.1",
     "grunt-contrib-jshint": "~0.6.3",
     "matchdep": "~0.3.0",
     "vows": "~0.7.0",
