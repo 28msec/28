@@ -56,5 +56,11 @@
   "directories": {
     "test": "./test",
     "bin": "./bin"
-  }
+  },
+  "licenses": [
+    {
+      "type": "Apache 2",
+      "url": "https://github.com/28msec/28/blob/master/LICENSE"
+    }
+  ]
 }
