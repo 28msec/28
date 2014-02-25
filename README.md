@@ -6,10 +6,12 @@ Below you'll find tutorials that will teach you how to use 28.io, and reference 
 Sign up and create an account at https://28.io.
 There are different ways for developing queries using 28.io:
 
-* JSONiq & 28.io tutorials: http://www.28.io/blog/tags/tutorial
-* Using the 28.io portal at https://portal.28.io
-* Using the REST API: http://www.28.io/documentation/latest/api
-* Using the C# Language binding (more to come): https://github.com/28msec/28.io-csharp
+* [JSONiq & 28.io tutorials](http://www.28.io/blog/tags/tutorial)
+* [28.io Portal](https://portal.28.io)
+* [28.io REST API](http://www.28.io/documentation/latest/api)
+* Bindings for 28.io
+    * [AngularJS](http://github.com/28msec/28.io-angularjs)
+    * [C#](https://github.com/28msec/28.io-csharp)
 
 ## Installation
 
