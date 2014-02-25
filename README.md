@@ -119,6 +119,9 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
+Version 0.2.2
+* Add file extension for modules. (.jq, .xq, or .module)
+
 Version 0.2.1
 
 * New truncate command.
