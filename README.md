@@ -125,6 +125,7 @@ Version 0.2.0
 
 * Bug fix for Windows clients.
 * Improvements in the CLI error handling.
+* Execute request asynchronously if an automatic overwrite option is set.
 
 Version 0.1.9
 
