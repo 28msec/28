@@ -119,6 +119,9 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
+Version 0.2.2
+* Update to 28.io version 3.1
+
 Version 0.2.1
 
 * New truncate command.
