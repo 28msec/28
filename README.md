@@ -63,7 +63,7 @@ Options:
 
 ### Truncate Project
 
-```
+```bash
 $28 truncate <project name> [-s, --simulate]
 ```
 
@@ -72,6 +72,13 @@ Options:
 * `-h, --help`               output usage information.
 * `-s, --simulate`           Simulate for extra safety.
 
+### Code checking
+
+The xqlint commands checks your code for static errors and warning using [xqlint](http://github.com/wcandillon/xqlint).
+
+```bash
+$28 xqlint <path> [-s, --style-check <yes, no>]
+```
 
 ## Synchronizing 
 
@@ -118,6 +125,9 @@ This is how the default settings looks like:
 * *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded.
 
 ## ChangeLog
+
+Version 0.2.3
+* Add new xqlint command
 
 Version 0.2.2
 * Update to 28.io version 3.1
