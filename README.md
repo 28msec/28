@@ -1,4 +1,4 @@
-28.io CLI [![Build Status](https://travis-ci.org/28msec/28.png?branch=master)](https://travis-ci.org/28msec/28)
+28.io CLI [![Build Status](https://travis-ci.org/28msec/28.png?branch=master)](https://travis-ci.org/28msec/28) [![NPM version](https://badge.fury.io/js/28.png)](http://badge.fury.io/js/28)
 ============
 
 Below you'll find tutorials that will teach you how to use 28.io, and reference documentation.
@@ -63,7 +63,7 @@ Options:
 
 ### Truncate Project
 
-```
+```bash
 $28 truncate <project name> [-s, --simulate]
 ```
 
@@ -72,6 +72,13 @@ Options:
 * `-h, --help`               output usage information.
 * `-s, --simulate`           Simulate for extra safety.
 
+### Code checking
+
+The xqlint commands checks your code for static errors and warning using [xqlint](http://github.com/wcandillon/xqlint).
+
+```bash
+$28 xqlint <path> [-s, --style-check <yes, no>]
+```
 
 ## Synchronizing 
 
@@ -119,8 +126,17 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
-Version 0.2.2
+Version 0.2.4
+
 * Add file extension for modules. (.jq, .xq, or .module)
+
+Version 0.2.3
+
+* Add new xqlint command
+
+Version 0.2.2
+
+* Update to 28.io version 3.1
 
 Version 0.2.1
 
