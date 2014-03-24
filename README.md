@@ -126,10 +126,16 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
+Version 0.2.4
+
+* Add file extension for modules. (.jq, .xq, or .module)
+
 Version 0.2.3
+
 * Add new xqlint command
 
 Version 0.2.2
+
 * Update to 28.io version 3.1
 
 Version 0.2.1
