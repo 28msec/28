@@ -126,6 +126,10 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
+Version 0.2.5
+
+* Exports Client and API classes
+
 Version 0.2.4
 
 * Add file extension for modules. (.jq, .xq, or .module)
