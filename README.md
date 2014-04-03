@@ -126,6 +126,10 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
+Version 0.2.6
+
+* Update xqlint version.
+
 Version 0.2.5
 
 * Exports Client and API classes
