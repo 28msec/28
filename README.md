@@ -126,36 +126,4 @@ This is how the default settings looks like:
 
 ## ChangeLog
 
-Version 0.2.6
 
-* Update xqlint version.
-
-Version 0.2.5
-
-* Exports Client and API classes
-
-Version 0.2.4
-
-* Add file extension for modules. (.jq, .xq, or .module)
-
-Version 0.2.3
-
-* Add new xqlint command
-
-Version 0.2.2
-
-* Update to 28.io version 3.1
-
-Version 0.2.1
-
-* New truncate command.
-* Execute request asynchronously if an automatic overwrite option is set.
-
-Version 0.2.0
-
-* Bug fix for Windows clients.
-* Improvements in the CLI error handling.
-
-Version 0.1.9
-
-* Bug fixes: [#1](https://github.com/28msec/28/issues/1), [#2](https://github.com/28msec/28/issues/2), [#3](https://github.com/28msec/28/issues/3).
