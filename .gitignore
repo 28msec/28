@@ -1,3 +1,7 @@
 node_modules
 .DS_Store
 *.swp
+.28.json
+tests/projects/public
+tests/projects/private
+tests/projects/modules

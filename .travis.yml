@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
-  - "0.8"
+- '0.11'
+- '0.10'
 before_script:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
+deploy:
+  provider: npm
+  email: w@28.io
+  api_key:
+    secure: yzsAc7hLjEro+NuvUxGzT1F1t8qTvTlGJtxtjpHehNyHZUM+oPF1Vws9+OvaWpgWYOyPS8u5FsAQWLSousXQZ3OLVQbEeWPqehQmYw8kKubzFI23ys2gGyc+HuYzCIb056zL9mKQdObQTABSxIZgc++VPguIosao48dLCc0hsro=
+  on:
+    repo: 28msec/28
+    branch: master
+    node: '0.11'
