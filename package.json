@@ -18,7 +18,7 @@
   "repository": {
     "url": "https://github.com/28msec/28"
   },
-  "main": "./lib/main.js",
+  "main": "./lib/28.js",
   "bin": {
     "28": "./bin/28"
   },
