@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "commander": "~2.2.0",
-    "q": "~1.0.0",
+    "q": "~1.0.1",
     "cat-settings": "~1.0.0",
     "underscore": "~1.5.2",
     "read": "~1.0.5",
