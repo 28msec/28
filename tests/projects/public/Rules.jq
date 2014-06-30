@@ -1,1 +1,0 @@
-{ availableRules: ["FundamentalAccountingConcepts"] }

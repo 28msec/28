@@ -14,6 +14,7 @@
 
 @test "upload project" {
     cd tests/projects
+    unzip queries.zip
     run ../../bin/28 upload clienttest
     [ $status -eq 0 ]
 }

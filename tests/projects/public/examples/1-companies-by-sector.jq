@@ -1,1 +1,0 @@
-import module namespace entities = "http://xbrl.io/modules/bizql/entities";for $e in entities:entities()group by $s := $e.Profiles.SEC.Sectorreturn {    sector : $s,    num-entities : [ count($e) ],    entities : [ $e.Profiles.SEC.CompanyName ]}
