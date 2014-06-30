@@ -21,6 +21,6 @@
 
 @test "download project" {
     cd tests/projects
-    run ../../bin/28 upload clienttest -o all
+    run ../../bin/28 download clienttest -o all
     [ $status -eq 0 ]
 }
