@@ -12,6 +12,7 @@ There are different ways for developing queries using 28.io:
 * [28.io REST API](http://www.28.io/documentation/latest/api)
 * Bindings for 28.io
     * [AngularJS](http://github.com/28msec/28.io-angularjs)
+    * [NodeJS](http://github.com/28msec/28.io-nodejs)
     * [C#](https://github.com/28msec/28.io-csharp)
 
 ## Installation
