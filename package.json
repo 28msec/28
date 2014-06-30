@@ -41,7 +41,8 @@
     "matchdep": "~0.3.0",
     "vows": "~0.7.0",
     "grunt-vows": "~0.4.0",
-    "grunt-jsonlint": "~1.0.4"
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-bats": "0.0.3"
   },
   "optionalDependencies": {},
   "engines": {

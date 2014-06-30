@@ -31,8 +31,11 @@ module.exports = function(grunt) {
                     'package.json'
                 ]
             }
+        },
+        bats: {
+            all: ['tests/*.bats']
         }
     });
     
-    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'bats']);
 };

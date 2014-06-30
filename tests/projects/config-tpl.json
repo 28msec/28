@@ -1,0 +1,7 @@
+{
+  "protocol": "https",
+  "project_name": "portal",
+  "project_domain": "28.io",
+  "ignore": [], 
+  "prefix": "/api"
+}
