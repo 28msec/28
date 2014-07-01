@@ -22,13 +22,20 @@ module.exports = function(grunt) {
                     colors: true,
                     coverage: 'json'
                 },
-                // String or array of strings
-                // determining which files to include.
-                // This option is grunt's "full" file format.
-                src: ['test/*.js', 'spec/*']
+                src: ['tests/*.js']
             }
+        },
+        jsonlint: {
+            all: {
+                src: [
+                    'package.json'
+                ]
+            }
+        },
+        bats: {
+            all: ['tests/*.bats']
         }
     });
     
-    grunt.registerTask('default', ['jshint', 'vows']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'bats']);
 };
