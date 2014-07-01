@@ -16,7 +16,8 @@
   "homepage": "https://28.io",
   "bugs": "https://github.com/28msec/28/issues",
   "repository": {
-    "url": "https://github.com/28msec/28"
+    "type": "git",
+    "url": "git://github.com/28msec/28.git"
   },
   "main": "./lib/28.js",
   "bin": {
