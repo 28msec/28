@@ -18,6 +18,9 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
+  "maxdepth": 4,
+  "maxcomplexity": 9,
+  "maxstatements": 100,
   "globals": {
   }
 }
