@@ -16,6 +16,7 @@
     PROJECT_NAME="halfmoonbay"$RANDOM
     cd tests/projects
     run ../../bin/28 create-project $PROJECT_NAME
+    run ../../bin/28 list-datasources $PROJECT_NAME
     run ../../bin/28 delete-project $PROJECT_NAME
     [ $status -eq 0 ]
 }
