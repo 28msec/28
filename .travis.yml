@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
+- '0.11'
 before_script:
 - npm install -g grunt-cli
 deploy:
@@ -11,4 +12,4 @@ deploy:
   on:
     repo: 28msec/28
     branch: master
-    node: '0.10'
+    node: '0.11'
