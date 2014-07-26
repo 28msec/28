@@ -27,6 +27,7 @@
 
 @test "upload project with compilation error" {
     cd tests/test_project
-    run ../../bin/28 upload testproject2 -o all
+    run ../../bin/28 truncate clienttest 
+    run ../../bin/28 upload clienttest
     [ $status -ne 0 ]
 }
