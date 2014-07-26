@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -43,7 +43,8 @@
     "vows": "~0.7.0",
     "grunt-vows": "~0.4.0",
     "grunt-jsonlint": "~1.0.4",
-    "grunt-bats": "0.0.4"
+    "grunt-shell": "~0.7.0",
+    "bats": "git+https://github.com/sstephenson/bats.git#master"
   },
   "optionalDependencies": {},
   "engines": {

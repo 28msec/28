@@ -32,10 +32,18 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        bats: {
-            all: ['tests/*.bats']
+        shell: {
+            bats: {
+                options: {
+                },
+                command: [
+                    'node_modules/bats/libexec/bats tests/sync.bats',
+                    'node_modules/bats/libexec/bats tests/login.bats',
+                    'node_modules/bats/libexec/bats tests/projects.bats'
+                ].join('&&')
+            }
         }
     });
     
-    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'bats']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'shell']);
 };
