@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -33,7 +33,7 @@
     "final-fs": "~1.6.0",
     "xqlint": "0.0.7",
     "colors": "~0.6.2",
-    "28.io-nodejs": "0.0.7",
+    "28.io-nodejs": "0.0.9",
     "lodash": "~2.4.1",
     "update-notifier": "~0.2.0"
   },
