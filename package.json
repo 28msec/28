@@ -45,7 +45,7 @@
     "grunt-vows": "~0.4.0",
     "grunt-jsonlint": "~1.0.4",
     "grunt-shell": "~0.7.0",
-    "bats": "git+https://github.com/sstephenson/bats.git#master",
+    "bats": "git+https://github.com/sstephenson/bats.git#03c6ab4c0f6c389f57d9db0ebdebbd53435dcb0d",
     "lodash": "~2.4.1"
   },
   "optionalDependencies": {},
