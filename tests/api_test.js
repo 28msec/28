@@ -93,7 +93,7 @@ vows.describe('API Tests').addBatch({
                     });
                     return promise;
                 },
-                'Upload should succeed': function(error, success){
+                'Upload shouldn\'t succeed': function(error, success){
                     assert.equal(success, undefined);
                     assert.equal(_.isObject(error), true);
                 }
