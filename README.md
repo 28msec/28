@@ -74,6 +74,13 @@ Options:
 * `-h, --help`               output usage information.
 * `-s, --simulate`           Simulate for extra safety.
 
+
+### Watch Project
+
+```bash
+$28 watch <project name>
+```
+
 ### Code checking
 
 The xqlint commands checks your code for static errors and warning using [xqlint](http://github.com/wcandillon/xqlint).
