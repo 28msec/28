@@ -36,6 +36,12 @@ teardown() {
     [ $status -eq 0 ]
 }
 
+@test "upload project with complex query name" {
+    cd tests/test_project3
+    run ../../bin/28 upload $PROJECT_NAME
+    [ "$status" -eq 0 ]
+}
+
 @test "upload project with compilation error" {
     cd tests/test_project
     run ../../bin/28 upload $PROJECT_NAME
