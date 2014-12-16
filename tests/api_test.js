@@ -84,7 +84,7 @@ vows.describe('API Tests').addBatch({
                     var projectPath = 'tests/test_project';
                     var overwrite = 0, deleteOrphaned = true, simulate = false;
                     $28
-                    .upload(projectName, projectToken, projectPath, overwrite, deleteOrphaned, simulate, [])
+                    .upload(projectName, projectToken, projectPath, overwrite, deleteOrphaned, simulate, function(list){ return list; })
                     .then(function(success){
                         promise.emit('success', success);
                     })
@@ -109,7 +109,7 @@ vows.describe('API Tests').addBatch({
                     var projectPath = 'tests/test_project2';
                     var overwrite = 0, deleteOrphaned = true, simulate = false;
                     $28
-                        .upload(projectName, projectToken, projectPath, overwrite, deleteOrphaned, simulate, [])
+                        .upload(projectName, projectToken, projectPath, overwrite, deleteOrphaned, simulate, function(list){ return list; })
                         .then(function(success){
                             promise.emit('success', success);
                         })
