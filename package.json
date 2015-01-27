@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -24,18 +24,19 @@
     "28": "./bin/28"
   },
   "dependencies": {
-    "commander": "~2.2.0",
-    "q": "~1.0.1",
+    "28.io-nodejs": "0.1.7",
     "cat-settings": "~1.0.0",
-    "read": "~1.0.5",
-    "touch": "0.0.3",
-    "final-fs": "~1.6.0",
-    "xqlint": "0.0.7",
     "colors": "~0.6.2",
-    "28.io-nodejs": "0.1.6",
+    "commander": "~2.2.0",
+    "final-fs": "~1.6.0",
     "lodash": "~2.4.1",
+    "q": "~1.0.1",
+    "read": "~1.0.5",
+    "request": "^2.51.0",
+    "touch": "0.0.3",
     "update-notifier": "~0.2.0",
-    "watch": "git://github.com/mikeal/watch.git#0aee7194ea3bd03871a3b49851dc7cde9eef08f3"
+    "watch": "git://github.com/mikeal/watch.git#0aee7194ea3bd03871a3b49851dc7cde9eef08f3",
+    "xqlint": "0.0.7"
   },
   "devDependencies": {
     "bats": "git+https://github.com/sstephenson/bats.git#03c6ab4c0f6c389f57d9db0ebdebbd53435dcb0d",
