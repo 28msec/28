@@ -5,4 +5,4 @@ var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var updateNotifier = require('update-notifier');
 var pkg = require('../package.json');
 updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
-require(lib + '/main.js');
+require(lib + '/cli.js');
