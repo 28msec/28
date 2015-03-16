@@ -32,10 +32,18 @@ You can now authorize the client using your email and password. Your password is
 $ 28 login <your email>
 ```
 
-### List Projects:
+### Projects:
 
 ```
-$ 28 projects
+$ 28 projects list
+```
+
+```
+$ 28 projects create <project name>
+```
+
+```
+$ 28 project delete <project name>
 ```
 ### Download Project
 
