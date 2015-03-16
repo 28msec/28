@@ -5,4 +5,16 @@ var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var updateNotifier = require('update-notifier');
 var pkg = require('../package.json');
 updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
+var omelette = require('omelette');
+var complete = omelette('28 <cmd> <option>');
+complete.on('cmd', function() {
+    this.reply(['projects', 'datasources', 'watch', 'run', 'upload', 'download', 'truncate']);
+});
+
+complete.on('option', function(action) {
+    this.reply(['list', 'delete', 'create', 'set']);
+});
+
+complete.init();
+
 require(lib + '/cli.js');
