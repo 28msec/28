@@ -33,6 +33,7 @@
     "q": "~1.0.1",
     "read": "~1.0.5",
     "request": "^2.51.0",
+    "tabtab": "0.0.3",
     "touch": "0.0.3",
     "update-notifier": "~0.2.0",
     "watch": "git://github.com/mikeal/watch.git#0aee7194ea3bd03871a3b49851dc7cde9eef08f3",

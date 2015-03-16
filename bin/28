@@ -5,4 +5,17 @@ var lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
 var updateNotifier = require('update-notifier');
 var pkg = require('../package.json');
 updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
+
+var tabtab = require('tabtab');
+if(process.argv.slice(2)[0] === 'completion') return tabtab.complete('28', function(err, data) {
+    // simply return here if there's an error or data not provided.
+    // stderr not showing on completions
+    if(err || !data) return;
+
+    //if(/^--\w?/.test(data.last)) return tabtab.log(['help', 'version'], data, '--');
+    //if(/^-\w?/.test(data.last)) return tabtab.log(['n', 'o', 'd', 'e'], data, '-');
+
+    tabtab.log(['datasources', 'projects', 'watch'], data);
+});
+
 require(lib + '/cli.js');
