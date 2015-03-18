@@ -71,25 +71,31 @@ cli
             }
             console.log('Listing datasources...'.grey);
             return $28.listDatasources(projectName, projectToken).then(function(data){
-                var toRemove = [];
+                var promises = [];
                 data.body.forEach(function(source) {
-                    toRemove.push(
-                        $28.removeDatasource(projectName, source.category, source.name, projectToken)
+                    promises.push(
+                        function(){ return $28.removeDatasource(projectName, source.category, source.name, projectToken); }
+                    );
+                });
+                sources.forEach(function(source) {
+                    promises.push(
+                        function(){
+                        return $28.createDatasource(
+                            projectName, source.category, source.name,
+                            projectToken, source.default === true, source.credentials
+                        ); }
                     );
                 });
                 console.log('Updating datasources...'.grey);
-                return toRemove.reduce(Q.when, Q.resolve()).then(function() {
-                    var toCreate = [];
-                    sources.forEach(function(source) {
-                        toCreate.push(
-                            $28.createDatasource(
-                                projectName, source.category, source.name,
-                                projectToken, source.default === true, source.credentials
-                            )
-                        );
+                return promises.reduce(function(acc, next){
+                    return acc.then(function() {
+                        var defered = Q.defer();
+                        setTimeout(function(){
+                            defered.resolve(next());
+                        }, 1000);
+                        return defered.promise;
                     });
-                    return toCreate.reduce(Q.when, Q.resolve());
-                });
+                }, Q.resolve());
             }).then(function(){
                 console.log('Done.'.grey);
             });
