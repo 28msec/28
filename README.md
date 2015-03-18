@@ -115,22 +115,6 @@ You can use the *download* command to periodically get updates from your 28.io p
 $28 download test --overwrite if-newer --delete-orphaned
 ```
 
-### Configure auto-complete
-
-Auto-complete is supported for Mac and Linux.
-To enable it in zsh, run:
-
-```bash
-echo '. <(28 --completion)' >> .zshrc
-```
-
-To enable it in bash, run:
-
-```bash
-28 --completion >> ~/28.completion.sh
-echo 'source ~/28.completion.sh' >> .bash_profile
-```
-
 ## Settings
 
 By default, a setting file named *.28.json* is created in your home directory.
@@ -157,6 +141,20 @@ This is how the default settings looks like:
 * *project_domain* property is the suffix of the 28.io API endpoint.
 * *ignore* property contains a list of regular expressions that will filter out files from being uploaded and downloaded.
 
-## ChangeLog
 
+### Configure auto-complete
+
+Auto-complete is supported for Mac and Linux.
+To enable it in zsh, run:
+
+```bash
+echo '. <(28 --completion)' >> .zshrc
+```
+
+To enable it in bash, run:
+
+```bash
+28 --completion >> ~/28.completion.sh
+echo 'source ~/28.completion.sh' >> .bash_profile
+```
 
