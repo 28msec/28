@@ -19,7 +19,7 @@ cli
     .description('List Datasources')
     .action(function(projectName){
         projectName = projectName || Config.getDefaultProject();
-        Config.refreshTokens().then(function(){
+        Config.refreshTokens(projectName).then(function(){
             var projectToken;
             try {
                 projectToken = Config.getProjectToken(projectName);
@@ -62,7 +62,7 @@ cli
     .action(function(projectName, options){
         projectName = projectName || Config.getDefaultProject();
         var sources = JSON.parse(fs.readFileSync(options.config, 'utf-8'));
-        Config.refreshTokens().then(function() {
+        Config.refreshTokens(projectName).then(function() {
             var projectToken;
             try {
                 projectToken = Config.getProjectToken(projectName);

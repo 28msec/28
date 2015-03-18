@@ -34,7 +34,7 @@ cli.command('create [project-name]')
 .action(function(projectName){
     projectName = projectName || Config.getDefaultProject();
     console.log('Creating Project ' + projectName + '...'.grey);
-    Config.refreshTokens()
+    Config.refreshTokens(projectName)
     .then(function(){
         return $28.createProject(projectName, Config.getAccessToken());
     })
@@ -50,7 +50,7 @@ cli.command('delete [project-name]')
 .action(function(projectName){
     projectName = projectName || Config.getDefaultProject();
     console.log('Deleting Project ' + projectName + '...'.grey);
-    Config.refreshTokens()
+    Config.refreshTokens(projectName)
     .then(function(){
         return $28.deleteProject(projectName, Config.getAccessToken());
     })
