@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -30,7 +30,7 @@
     "commander": "^2.7.1",
     "final-fs": "~1.6.0",
     "lodash": "~2.4.1",
-    "omelette": "git://github.com/wcandillon/omelette.git#a041750e174c881846eb4d4d9217fe908ddeb14c",
+    "omelette": "git://github.com/wcandillon/omelette.git#deaa04da7048daf3db3d60fe3c6c5899c6fbb171",
     "q": "~1.0.1",
     "read": "~1.0.5",
     "request": "^2.51.0",
