@@ -145,6 +145,20 @@ This is how the default settings looks like:
 ### Configure auto-complete
 
 Auto-complete is supported for Mac and Linux.
+You need bash-completion installed.
+####Mac OS X
+On OS X you can run `brew install bash-completion` if you have homebrew installed.
+Add bash-completion to your `.bash_profile`:
+
+```bash
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+```
+
+####Linux
+On Ubuntu you can run `apt-get install bash-completion`.
+
 To enable it in zsh, run:
 
 ```bash
@@ -155,6 +169,6 @@ To enable it in bash, run:
 
 ```bash
 28 --completion >> ~/28.completion.sh
-echo 'source ~/28.completion.sh' >> .bash_profile
+echo 'source ~/28.completion.sh' >> ~/.bash_profile
 ```
 
