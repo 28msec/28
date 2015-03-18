@@ -155,6 +155,6 @@ To enable it in bash, run:
 
 ```bash
 28 --completion >> ~/28.completion.sh
-echo 'source ~/28.completion.sh' >> .bash_profile
+echo 'source ~/28.completion.sh' >> ~/.bash_profile
 ```
 
