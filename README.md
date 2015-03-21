@@ -2,21 +2,9 @@
 
 [![Build Status](http://img.shields.io/travis/28msec/28/master.svg?style=flat)](https://travis-ci.org/28msec/28) [![NPM version](http://img.shields.io/npm/v/28.svg?style=flat)](http://badge.fury.io/js/28) [![Code Climate](http://img.shields.io/codeclimate/github/28msec/28.svg?style=flat)](https://codeclimate.com/github/28msec/28)
 
-Below you'll find tutorials that will teach you how to use 28.io, and reference documentation.
-
-Sign up and create an account at https://28.io.
-There are different ways for developing queries using 28.io:
-
-* [JSONiq & 28.io tutorials](http://www.28.io/blog/tags/tutorial)
-* [28.io Portal](https://portal.28.io)
-* [28.io REST API](http://www.28.io/documentation/latest/api)
-* Bindings for 28.io
-    * [AngularJS](http://github.com/28msec/28.io-angularjs)
-    * [NodeJS](http://github.com/28msec/28.io-nodejs)
-    * [C#](https://github.com/28msec/28.io-csharp)
-
 ## Installation
 
+Sign up and create an account at https://28.io.
 Install Node.js and NPM for your system (Mac, Windows or Linux). And install the command line tool using:
 
 ```
