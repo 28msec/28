@@ -89,39 +89,24 @@ cli
             return $28.listDatasources(projectName, projectToken).then(function(data){
                 var promises = [];
                 data.body.forEach(function(source) {
-                    promises.push(
-                        function(){ return $28.removeDatasource(projectName, source.category, source.name, projectToken); }
-                    );
+                    promises.push($28.removeDatasource(projectName, source.category, source.name, projectToken));
                 });
                 sources.forEach(function(source) {
                     if(source.default === true && source.category === 'MongoDB') {
-                        promises.push(function(){
-                            return $28.updateDefaultMongoDBCredentials(
-                                projectName, Config.getAccessToken(), 'user',
-                                source.credentials['conn-string'], source.credentials.db, source.credentials.user,
-                                source.credentials.pass, source.credentials['pre-digested'] === true ? true : undefined
-                            );
-                        });
+                        promises.push($28.updateDefaultMongoDBCredentials(
+                            projectName, Config.getAccessToken(), 'user',
+                            source.credentials['conn-string'], source.credentials.db, source.credentials.user,
+                            source.credentials.pass, source.credentials['pre-digested'] === true ? true : undefined
+                        ));
                     } else {
-                        promises.push(
-                            function(){
-                                return $28.createDatasource(
-                                    projectName, source.category, source.name,
-                                    projectToken, source.default === true, source.credentials
-                                ); }
-                        );
+                        promises.push($28.createDatasource(
+                            projectName, source.category, source.name,
+                            projectToken, source.default === true, source.credentials
+                        ));
                     }
                 });
                 console.log('Updating datasources...'.grey);
-                return promises.reduce(function(acc, next){
-                    return acc.then(function() {
-                        var defered = Q.defer();
-                        setTimeout(function(){
-                            defered.resolve(next());
-                        }, 1000);
-                        return defered.promise;
-                    });
-                }, Q.resolve());
+                return Q.all(promises);
             }).then(function(){
                 console.log('Done.'.grey);
             });
