@@ -4,7 +4,7 @@
 
 ## Installation
 
-Sign up and create an account at https://28.io.
+Sign up and create an account at http://hq.28.io/account/register.
 Install Node.js and NPM for your system (Mac, Windows or Linux). And install the command line tool using:
 
 ```
