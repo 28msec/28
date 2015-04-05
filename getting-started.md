@@ -68,7 +68,7 @@ $ 28 watch myproject
 Watching /home/wcandillon/projects/demo/queries...
 ```
 
-To run a query use `28 run`. It also support `fn:trace()`:
+To run a query use `28 run`. It also supports `fn:trace()`:
 ```bash
 $28 run myproject public/average_reputation.jq
 ```
