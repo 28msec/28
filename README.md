@@ -5,6 +5,7 @@
 ## Installation
 
 Sign up and create an account at http://hq.28.io/account/register.
+A video tutorial that shows the 28 cli in action is available [here](https://youtu.be/NILlys4h7Fs?t=53s).
 Install Node.js and NPM for your system (Mac, Windows or Linux). And install the command line tool using:
 
 ```
