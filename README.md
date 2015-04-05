@@ -2,10 +2,11 @@
 
 [![Build Status](http://img.shields.io/travis/28msec/28/master.svg?style=flat)](https://travis-ci.org/28msec/28) [![NPM version](http://img.shields.io/npm/v/28.svg?style=flat)](http://badge.fury.io/js/28) [![Code Climate](http://img.shields.io/codeclimate/github/28msec/28.svg?style=flat)](https://codeclimate.com/github/28msec/28)
 
-## Installation
-
 Sign up and create an account at http://hq.28.io/account/register.
 A video tutorial that shows the 28 cli in action is available [here](https://youtu.be/NILlys4h7Fs?t=53s).
+Getting started instructions are also available [here](https://github.com/28msec/28/blob/master/getting-started.md).
+
+## Installation
 Install Node.js and NPM for your system (Mac, Windows or Linux). And install the command line tool using:
 
 ```
