@@ -39,6 +39,7 @@ cli
             console.log('Listing datasources...'.grey);
             var colors = {
                 MongoDB: 'green',
+                ElasticSearch: 'green',
                 JDBC: 'blue',
                 Cloudant: 'magenta',
                 CloudSearch: 'yellow',
