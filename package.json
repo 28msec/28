@@ -1,12 +1,12 @@
 {
   "author": {
-    "name": "28msec",
-    "email": "hello@28.io",
+    "name": "William Candillon",
+    "email": "w@28.io",
     "url": "http://28.io"
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "keywords": [
     "jsoniq",
     "xquery",
