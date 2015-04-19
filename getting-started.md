@@ -47,7 +47,7 @@ Here's an example of data source configuration file:
 
 To attach the configuration to your project:
 ```bash
-$28 datasources set -c config.json
+$28 datasources set my-project -c config.json
 ```
 
 ##Query Editing
@@ -56,7 +56,7 @@ The `28 watch` command will deploy the local queries to 28.io and listen for cha
 
 
 ```bash
-$ 28 watch myproject
+$ 28 watch my-project
 >> ↗ modules/io/28/modules/collections.jq
 >> ↗ private/import.jq
 >> ↗ public/average_reputation.jq
