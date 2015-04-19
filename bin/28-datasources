@@ -43,7 +43,8 @@ cli
                 Cloudant: 'magenta',
                 CloudSearch: 'yellow',
                 S3: 'cyan',
-                SPARQL: 'orange'
+                SPARQL: 'orange',
+                MarkLogic: 'red'
             };
             Q.all([
                 $28.listDatasources(projectName, projectToken),
