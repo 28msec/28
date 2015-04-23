@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -29,12 +29,13 @@
     "colors": "^1.0.3",
     "commander": "^2.7.1",
     "final-fs": "~1.6.0",
-    "lodash": "~2.4.1",
+    "lodash": "3.7.0",
     "omelette": "git://github.com/wcandillon/omelette.git#deaa04da7048daf3db3d60fe3c6c5899c6fbb171",
     "q": "~1.0.1",
     "read": "~1.0.5",
     "request": "^2.51.0",
     "touch": "0.0.3",
+    "unzip": "^0.1.11",
     "update-notifier": "~0.2.0",
     "watch": "git://github.com/mikeal/watch.git#0aee7194ea3bd03871a3b49851dc7cde9eef08f3",
     "xqlint": "0.0.7"
@@ -47,7 +48,6 @@
     "grunt-jsonlint": "~1.0.4",
     "grunt-shell": "~0.7.0",
     "grunt-vows": "~0.4.0",
-    "lodash": "~2.4.1",
     "matchdep": "~0.3.0",
     "vows": "~0.7.0"
   },
