@@ -43,11 +43,11 @@
   "devDependencies": {
     "bats": "git+https://github.com/sstephenson/bats.git#03c6ab4c0f6c389f57d9db0ebdebbd53435dcb0d",
     "global-tunnel": "^1.2.0",
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "0.10.0",
-    "grunt-jsonlint": "~1.0.4",
-    "grunt-shell": "~0.7.0",
-    "grunt-vows": "~0.4.0",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.10.0",
+    "gulp-jsonlint": "^1.0.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-typescript": "^2.6.0",
     "matchdep": "~0.3.0",
     "vows": "~0.7.0"
   },
