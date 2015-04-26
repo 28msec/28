@@ -47,8 +47,13 @@
     "gulp-jshint": "^1.10.0",
     "gulp-jsonlint": "^1.0.2",
     "gulp-load-plugins": "^0.10.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tslint": "^2.0.0",
     "gulp-typescript": "^2.6.0",
+    "jshint-stylish": "^1.0.1",
+    "map-stream": "0.0.5",
     "matchdep": "~0.3.0",
+    "merge2": "^0.3.5",
     "vows": "~0.7.0"
   },
   "optionalDependencies": {},
