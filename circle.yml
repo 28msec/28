@@ -3,5 +3,5 @@ machine:
     version: 0.10.33
 dependencies:
   post:
-    - npm install -g gulp tsd
+    - npm install -g tsd
     - tsd reinstall
