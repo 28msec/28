@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -37,7 +37,7 @@
     "request": "^2.51.0",
     "touch": "0.0.3",
     "update-notifier": "~0.2.0",
-    "watch": "git://github.com/mikeal/watch.git#0aee7194ea3bd03871a3b49851dc7cde9eef08f3",
+    "watch": "0.16.0",
     "xqlint": "0.0.7"
   },
   "devDependencies": {
