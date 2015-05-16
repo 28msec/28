@@ -51,7 +51,7 @@ cli
                 $28.listDatasources(projectName, projectToken),
                 $28.getDefaultMongoDBCredentials(projectName, Config.getAccessToken())
             ])
-                .then(function(result){
+                .then(function(result) {
                     var difault = result[1].body;
                     difault.category = 'MongoDB';
                     difault.name = 'default';
@@ -60,7 +60,14 @@ cli
                     if(sources.length === 0) {
                         console.log('No datasources have been configured yet.');
                     }
-                    _.chain(sources).sortBy(['category', 'default', 'name']).groupBy('category').forEach(function(list, category){
+                    var groups = sources.sort().reduce(function(con, e){
+                        if(!con[e.category]) {
+                            con[e.category] = [];
+                        }
+                        con[e.category].push(e);
+                        return con;
+                    }, {});
+                    _.forEach(groups, function(list, category){
                         var color = colors[category];
                         var bgColor = 'bg' + color[0].toUpperCase() + color.substring(1);
                         console.log(('  ' + category + '  ')[bgColor].white);
