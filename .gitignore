@@ -1,8 +1,5 @@
 node_modules
+typings
 .DS_Store
 *.swp
-.28.json
-tests/projects/public
-tests/projects/private
-tests/projects/modules
 .idea
