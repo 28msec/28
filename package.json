@@ -24,7 +24,7 @@
     "28": "./bin/28"
   },
   "dependencies": {
-    "28.io-nodejs": "0.3.0",
+    "28.io-nodejs": "0.3.1",
     "cat-settings": "~1.0.0",
     "colors": "^1.0.3",
     "commander": "^2.7.1",
