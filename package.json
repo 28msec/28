@@ -24,7 +24,7 @@
     "28": "./bin/28"
   },
   "dependencies": {
-    "28.io-nodejs": "git://github.com/28msec/28.io-nodejs.git#9ea8b7ebe4ddc58f9d421bbf3dbf343ad5eeeea4",
+    "28.io-nodejs": "0.3.2",
     "cat-settings": "~1.0.0",
     "colors": "^1.0.3",
     "commander": "^2.7.1",

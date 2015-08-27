@@ -10,16 +10,6 @@ require('colors');
 
 var pkg = require('../package.json');
 var Config = require('../lib/config').Config;
-//Proxy Settings
-/*
-var globalTunnel = require('global-tunnel');
-
-globalTunnel.initialize({
-    host: '127.0.0.1',
-    port: 8888,
-    sockets: 50 // optional pool size for each http and https
-});
-*/
 
 Config.load();
 var $28 = Config.getAPIClient();
@@ -30,7 +20,7 @@ cli
     .action(function(projectName){
         projectName = projectName || Config.getDefaultProject();
         Config.refreshTokens(projectName).then(function(){
-            return $28.getCustomRewriteRules(projectName, Config.getAccessToken())
+            $28.getCustomRewriteRules(projectName, Config.getAccessToken())
                 .then(function(result) {
                     console.log(result.body);
                 })
@@ -44,13 +34,9 @@ cli
     .option('-c, --config <file>', 'Configuration file')
     .action(function(projectName, options){
         projectName = projectName || Config.getDefaultProject();
-        var rewrites = fs.readFileSync(options.config, 'utf-8');
-        //rewrites = rewrites.map(function(rewrite){
-        //    return JSON.stringify(rewrite, null, 2);
-        //}).join(',\n');
-        //console.log(rewrites);
+        var rewrites = JSON.parse(fs.readFileSync(options.config, 'utf-8'));
         Config.refreshTokens(projectName).then(function() {
-            return $28.setCustomRewriteRules(projectName, Config.getAccessToken(), rewrites).then(function(result){
+            $28.setCustomRewriteRules(projectName, Config.getAccessToken(), rewrites).then(function(){
                 console.log('done');
             }).catch(Config.handleAPIError);
         });
