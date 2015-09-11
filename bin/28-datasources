@@ -23,6 +23,11 @@ var $28 = Config.getAPIClient();
 //    sockets: 50 // optional pool size for each http and https
 //});
 
+var categories = [
+    'MongoDB', 'ElasticSearch', 'JDBC', 'Cloudant',
+    'CloudSearch', 'S3', 'SPARQL', 'MarkLogic'
+];
+
 cli
     .command('list [project-name]')
     .description('List Datasources')
@@ -67,7 +72,7 @@ cli
                         con[e.category].push(e);
                         return con;
                     }, {});
-                    _.forEach(groups, function(list, category){
+                    _.forEach(groups, function(list, category) {
                         var color = colors[category];
                         var bgColor = 'bg' + color[0].toUpperCase() + color.substring(1);
                         console.log(('  ' + category + '  ')[bgColor].white);
@@ -101,6 +106,9 @@ cli
                     promises.push($28.removeDatasource(projectName, source.category, source.name, projectToken));
                 });
                 sources.forEach(function(source) {
+                    if(categories.indexOf(source.category) === -1) {
+                        throw new Error(source.category + ' not an available datasource category. Available categories: ' + JSON.stringify(categories));
+                    }
                     if(source.default === true && source.category === 'MongoDB') {
                         promises.push($28.updateDefaultMongoDBCredentials(
                             projectName, Config.getAccessToken(), 'user',
@@ -110,7 +118,7 @@ cli
                     } else {
                         promises.push($28.createDatasource(
                             projectName, source.category, source.name,
-                            projectToken, source.default === true, source.credentials
+                            projectToken, source.default === true, JSON.stringify(source.credentials)
                         ));
                     }
                 });
