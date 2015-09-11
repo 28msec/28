@@ -67,7 +67,7 @@ cli
                         con[e.category].push(e);
                         return con;
                     }, {});
-                    _.forEach(groups, function(list, category){
+                    _.forEach(groups, function(list, category) {
                         var color = colors[category];
                         var bgColor = 'bg' + color[0].toUpperCase() + color.substring(1);
                         console.log(('  ' + category + '  ')[bgColor].white);
@@ -110,7 +110,7 @@ cli
                     } else {
                         promises.push($28.createDatasource(
                             projectName, source.category, source.name,
-                            projectToken, source.default === true, source.credentials
+                            projectToken, source.default === true, JSON.stringify(source.credentials)
                         ));
                     }
                 });
