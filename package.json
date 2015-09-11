@@ -6,7 +6,7 @@
   },
   "name": "28",
   "description": "Command line utility to download and upload 28.io queries.",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "keywords": [
     "jsoniq",
     "xquery",
@@ -24,7 +24,7 @@
     "28": "./bin/28"
   },
   "dependencies": {
-    "28.io-nodejs": "0.3.0",
+    "28.io-nodejs": "0.3.2",
     "cat-settings": "~1.0.0",
     "colors": "^1.0.3",
     "commander": "^2.7.1",
