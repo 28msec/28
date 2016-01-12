@@ -39,6 +39,7 @@ teardown() {
 @test "upload project with complex query name" {
     cd tests/test_project3
     run ../../bin/28 upload $PROJECT_NAME
+    run ../../bin/28 truncate $PROJECT_NAME
     [ "$status" -eq 0 ]
 }
 
