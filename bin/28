@@ -9,7 +9,7 @@ var pkg = require('../package.json');
 updateNotifier({packageName: pkg.name, packageVersion: pkg.version}).notify();
 
 //2. CLI completion
-var omelette = require('omelette');
+var omelette = require('omelette-fork');
 var complete = omelette('28 <cmd> <option>');
 complete.on('cmd', function() {
     this.reply(['projects', 'datasources', 'watch', 'run', 'upload', 'download', 'truncate']);
