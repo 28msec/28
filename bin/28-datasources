@@ -44,7 +44,7 @@ cli
             console.log('Listing datasources...'.grey);
             var colors = {
                 MongoDB: 'green',
-                ElasticSearch: 'green',
+                ElasticSearch: 'cyan',
                 JDBC: 'blue',
                 Cloudant: 'magenta',
                 CloudSearch: 'yellow',
@@ -53,7 +53,7 @@ cli
                 MarkLogic: 'red'
             };
             Q.all([
-                $28.listDatasources(projectName, projectToken),
+                $28.listDatasources(Config.getProjectEndpoint(projectName), projectToken),
                 $28.getDefaultMongoDBCredentials(projectName, Config.getAccessToken())
             ])
                 .then(function(result) {
@@ -100,7 +100,7 @@ cli
                 console.error(('Project not found: ' + projectName).red);
             }
             console.log('Listing datasources...'.grey);
-            return $28.listDatasources(projectName, projectToken).then(function(data){
+            return $28.listDatasources(Config.getProjectEndpoint(projectName), projectToken).then(function(data){
                 var promises = [];
                 data.body.forEach(function(source) {
                     promises.push($28.removeDatasource(projectName, source.category, source.name, projectToken));
@@ -117,7 +117,7 @@ cli
                         ));
                     } else {
                         promises.push($28.createDatasource(
-                            projectName, source.category, source.name,
+                            Config.getProjectEndpoint(projectName), source.category, source.name,
                             projectToken, source.default === true, JSON.stringify(source.credentials)
                         ));
                     }
