@@ -4,7 +4,7 @@ var vows = require('vows');
 var assert = require('assert');
 var EventEmitter = require('events').EventEmitter;
 var _ = require('lodash');
-var $28 = new (require('../lib/28.js').$28)('https://portal.28.io/api');
+var $28 = new (require('../lib/28.js').$28)('http://portal.28.io/api');
 
 var email = 'w+test@28.io';
 
