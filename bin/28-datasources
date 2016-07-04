@@ -103,7 +103,7 @@ cli
             return $28.listDatasources(Config.getProjectEndpoint(projectName), projectToken).then(function(data){
                 var promises = [];
                 data.body.forEach(function(source) {
-                    promises.push($28.removeDatasource(projectName, source.category, source.name, projectToken));
+                    promises.push($28.removeDatasource(Config.getProjectEndpoint(projectName), source.category, source.name, projectToken));
                 });
                 sources.forEach(function(source) {
                     if(categories.indexOf(source.category) === -1) {
