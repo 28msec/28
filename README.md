@@ -105,6 +105,14 @@ You can use the *download* command to periodically get updates from your 28.io p
 $28 download test --overwrite if-newer --delete-orphaned
 ```
 
+# Using the CLI on premise
+
+In order to use the 28 CLI against an 28msec instance installed on premise, simply run the following command where `/path/to/cellstore/docker-config.json` is the path of the cellstore configuration file: 
+
+```bash
+$28 init </path/to/cellstore/docker-config.json>
+```
+
 ## Settings
 
 By default, a setting file named *.28.json* is created in your home directory.
