@@ -101,7 +101,7 @@ vows.describe('API Tests').addBatch({
             'Upload (2)': {
                 topic: function(session){
                     var promise = new EventEmitter();
-                    var projectName = 'vows-project';
+                    var projectName = 'vows-project2';
                     var projectToken = session.project_tokens['project_' + projectName];
                     if(!projectToken) {
                         throw new Error('project not found ' + projectName);
@@ -109,7 +109,7 @@ vows.describe('API Tests').addBatch({
                     var projectPath = 'tests/test_project2';
                     var overwrite = 0, deleteOrphaned = true, simulate = false;
                     $28
-                        .upload('http://vows-project.28.io/v1', projectToken, projectPath, overwrite, deleteOrphaned, simulate, function(list){ return list; })
+                        .upload('http://vows-project2.28.io/v1', projectToken, projectPath, overwrite, deleteOrphaned, simulate, function(list){ return list; })
                         .then(function(success){
                             promise.emit('success', success);
                         })
