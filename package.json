@@ -43,6 +43,7 @@
     "bats": "git+https://github.com/sstephenson/bats.git#03c6ab4c0f6c389f57d9db0ebdebbd53435dcb0d",
     "global-tunnel": "^1.2.0",
     "grunt": "~0.4.2",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "0.10.0",
     "grunt-jsonlint": "~1.0.4",
     "grunt-shell": "~0.7.0",
