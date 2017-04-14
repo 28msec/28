@@ -48,5 +48,5 @@ module.exports = function(grunt) {
         }
     });
     
-    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'shell']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', /*'vows',*/ 'shell']);
 };
