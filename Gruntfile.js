@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                 'test/**/*.js'
             ]
         },
+      /*
         vows: {
             all: {
                 options: {
@@ -26,6 +27,7 @@ module.exports = function(grunt) {
                 src: ['tests/*.js']
             }
         },
+      */
         jsonlint: {
             all: {
                 src: [
