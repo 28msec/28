@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                 'test/**/*.js'
             ]
         },
+      /*
         vows: {
             all: {
                 options: {
@@ -26,13 +27,14 @@ module.exports = function(grunt) {
                 src: ['tests/*.js']
             }
         },
+      */
         jsonlint: {
             all: {
                 src: [
                     'package.json'
                 ]
             }
-        },
+        }/*,
         shell: {
             bats: {
                 options: {
@@ -43,8 +45,8 @@ module.exports = function(grunt) {
                     'node_modules/bats/libexec/bats tests/projects.bats'
                 ].join('&&')
             }
-        }
+        }*/
     });
     
-    grunt.registerTask('default', ['jsonlint', 'jshint', 'vows', 'shell']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', /*'vows', 'shell'*/]);
 };
