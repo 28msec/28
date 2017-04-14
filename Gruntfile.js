@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                     'package.json'
                 ]
             }
-        },
+        }/*,
         shell: {
             bats: {
                 options: {
@@ -45,8 +45,8 @@ module.exports = function(grunt) {
                     'node_modules/bats/libexec/bats tests/projects.bats'
                 ].join('&&')
             }
-        }
+        }*/
     });
     
-    grunt.registerTask('default', ['jsonlint', 'jshint', /*'vows',*/ 'shell']);
+    grunt.registerTask('default', ['jsonlint', 'jshint', /*'vows', 'shell'*/]);
 };
